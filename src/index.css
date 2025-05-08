@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide-in-from-top {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-out-to-top {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  
+  @keyframes slide-in-from-bottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-out-to-bottom {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  
+  .animate-in-from-top {
+    animation: slide-in-from-top 0.3s ;
+    animation-delay: 0ms;
+    transition-delay: 0;
+  }
+  
+  .animate-out-to-top {
+    animation: slide-out-to-top 0.3s;
+  }
+  
+  .animate-in-from-bottom {
+    animation: slide-in-from-bottom 0.3s;
+    animation-delay: 0ms;
+    transition-delay: 0;
+  }
+  
+  .animate-out-to-bottom {
+    animation: slide-out-to-bottom 0.3s;
+  }
+  
+  
+  
