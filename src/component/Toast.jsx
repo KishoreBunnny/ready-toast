@@ -54,10 +54,10 @@ export function Toast({
       <ToastPrimitive.Viewport
         className={cn(
           "fixed z-[100] flex flex-col-reverse gap-1",
-          position === "bottom-right" && "bottom-4 lg:right-4 left-1/2 transform -translate-x-1/2",
-          position === "bottom-left" && "bottom-4 lg:left-4 left-1/2 transform -translate-x-1/2",
-          position === "top-right" && "top-4 lg:right-4 left-1/2 transform -translate-x-1/2",
-          position === "top-left" && "top-4 lg:left-4 left-1/2 transform -translate-x-1/2",
+          position === "bottom-right" && "bottom-4 lg:right-4  transform lg:-translate-x-0 -translate-x-1/2  ",
+          position === "bottom-left" && "bottom-4 lg:left-4 transform lg:-translate-x-0 -translate-x-1/2  ",
+          position === "top-right" && "top-4 lg:right-4  transform lg:-translate-x-0 -translate-x-1/2 ",
+          position === "top-left" && "top-4 lg:left-4 left-1/2 transform lg:-translate-x-0 -translate-x-1/2  ",
           position === "bottom" && "bottom-4 left-1/2 transform -translate-x-1/2",
           position === "top" && "top-4 left-1/2 transform -translate-x-1/2"
         )}
