@@ -9,7 +9,55 @@ A customizable, animated, and easy-to-use toast notification component built wit
 ```bash
 npm install ready-toast
 
-Also, ensure react, react-dom, tailwindcss, and @radix-ui/react-toast are installed in your project.
+
+
+## To Get Started Simple
+
+
+1.In main.jsx or _app.js
+
+
+import { ToastProvider } from 'ready-toast'
+
+function App() {
+  return (
+    <ToastProvider> // warp your app with ToastProvider
+      <YourApp />
+    </ToastProvider>
+  )
+}
+
+
+2.To use Toast
+
+import { useToast } from 'ready-toast'
+
+function LoginButton() {
+  const { showToast } = useToast()
+
+  return (
+    <button onClick={() => {
+      showToast({
+        title: "Success",
+        description: "You logged in successfully.",
+        position: "top-right",
+        duration: 3000,
+        variant: "default",
+        className: "text-green-600" //pass your tailwind classes , if tailwind is installed only.
+      })
+    }}>
+      Login
+    </button>
+  )
+}
+
+
+
+
+Also, ensure react, react-dom, tailwindcss, and @radix-ui/react-toast are installed in your project(Installation of these packages is not required to use it  ).
+
+
+Also, to add additional className to Toast , you requrie tailwindcss.
 
 🚀 Features
 Built on Radix UI
