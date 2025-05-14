@@ -4,6 +4,10 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
+import autoprefixer from 'autoprefixer';
+import tailwindcss from '@tailwindcss/postcss';
+
+
 
 export default [
   {
@@ -24,13 +28,15 @@ export default [
       }),
       postcss({
         modules: false,
+        // extract: 'index.css',
         inject: {
           insertAt: 'top',
         },
-        config: path.resolve('./postcss.config.mjs'),
+        plugins:[tailwindcss(),autoprefixer()],
         minimize: true,
-        sourceMap: true,
+        sourceMap: true,       
       }),
+      
     ],
   },
 ];

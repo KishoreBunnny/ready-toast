@@ -1,9 +1,8 @@
 
-module.exports = {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],  // Adjust path to match your source
-    theme: {
-      extend: {}
-    },
-    plugins: []
-  }
-  
+export default {
+  content: ['./src/**/*.{html,js,jsx,ts,tsx,css}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};

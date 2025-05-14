@@ -1,4 +1,4 @@
-"use client";
+
 
 import React, { createContext, useContext, useState } from "react"
 import { Toast } from "../component/Toast.jsx"

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @keyframes slide-in-from-top {
     0% {
       transform: translateY(-100%);
@@ -66,6 +67,5 @@
   .animate-out-to-bottom {
     animation: slide-out-to-bottom 0.3s;
   }
-  
   
   
