@@ -16,7 +16,7 @@ npm install ready-toast
 
 1.In main.jsx or _app.js
 
-```
+```jsx
 import { ToastProvider } from 'ready-toast'
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
 
 2.To use Toast
 
-```
+```jsx
 import { useToast } from 'ready-toast'
 
 function LoginButton() {
@@ -145,7 +145,7 @@ jsx
 Copy
 Edit
 
-```
+```jsx
 import { Toast } from 'ready-toast'
 import React, { useState } from 'react'
 
@@ -182,7 +182,7 @@ jsx
 Copy
 Edit
 
-```
+```jsx
 // main.jsx or _app.js
 import { ToastProvider } from 'ready-toast'
 
@@ -200,7 +200,7 @@ jsx
 Copy
 Edit
 
-```
+```jsx
 import { useToast } from 'ready-toast'
 
 function LoginButton() {
