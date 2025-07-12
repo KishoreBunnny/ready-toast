@@ -224,15 +224,18 @@ function LoginButton() {
 ```
 
 💅 Props for <Toast />
-Prop	Type	Default	Description
-open	boolean	false	Controls toast visibility
-onOpenChange	function	—	Handler to control open state
-title	string	—	Toast title
-description	string	—	Toast description
-variant	string	"default"	"default", "dark", "destructive"
-position	string	"bottom-right"	Positions like "top", "bottom-left", etc.
-duration	number	3000	Auto-hide delay in milliseconds
-className	string	—	Add custom Tailwind styles
+
+| Prop           | Type     | Default          | Description                                   |
+| -------------- | -------- | ---------------- | --------------------------------------------- |
+| `open`         | boolean  | `false`          | Controls toast visibility                     |
+| `onOpenChange` | function | —                | Handler to control open state                 |
+| `title`        | string   | —                | Toast title                                   |
+| `description`  | string   | —                | Toast description                             |
+| `variant`      | string   | `"default"`      | `"default"`, `"dark"`, `"destructive"`        |
+| `position`     | string   | `"bottom-right"` | Positions like `"top"`, `"bottom-left"`, etc. |
+| `duration`     | number   | `3000`           | Auto-hide delay in milliseconds               |
+| `className`    | string   | —                | Add custom Tailwind styles                    |
+
 
 🧩 Dependencies
 This package relies on:
