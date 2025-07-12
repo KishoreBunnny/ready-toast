@@ -8,7 +8,7 @@ A customizable, animated, and easy-to-use toast notification component built wit
 
 ```bash
 npm install ready-toast
-
+```
 
 
 ## To Get Started Simple
