@@ -223,7 +223,7 @@ function LoginButton() {
 }
 ```
 
-💅 Props for <Toast />
+💅 Props for `<Toast />`
 
 | Prop           | Type     | Default          | Description                                   |
 | -------------- | -------- | ---------------- | --------------------------------------------- |
