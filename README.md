@@ -16,7 +16,7 @@ npm install ready-toast
 
 1.In main.jsx or _app.js
 
-
+```
 import { ToastProvider } from 'ready-toast'
 
 function App() {
@@ -26,10 +26,11 @@ function App() {
     </ToastProvider>
   )
 }
-
+```
 
 2.To use Toast
 
+```
 import { useToast } from 'ready-toast'
 
 function LoginButton() {
@@ -50,7 +51,7 @@ function LoginButton() {
     </button>
   )
 }
-
+```
 
 
 
@@ -143,6 +144,8 @@ Works in both Vite and Next.js apps
 jsx
 Copy
 Edit
+
+```
 import { Toast } from 'ready-toast'
 import React, { useState } from 'react'
 
@@ -171,11 +174,15 @@ function Example() {
     </>
   )
 }
+```
+
 🌍 App-Wide Usage with Context API
 1. Wrap your app with ToastProvider
 jsx
 Copy
 Edit
+
+```
 // main.jsx or _app.js
 import { ToastProvider } from 'ready-toast'
 
@@ -186,10 +193,14 @@ function App() {
     </ToastProvider>
   )
 }
+```
+
 2. Use useToast() Hook Anywhere
 jsx
 Copy
 Edit
+
+```
 import { useToast } from 'ready-toast'
 
 function LoginButton() {
@@ -210,6 +221,8 @@ function LoginButton() {
     </button>
   )
 }
+```
+
 💅 Props for <Toast />
 Prop	Type	Default	Description
 open	boolean	false	Controls toast visibility
