@@ -1,14 +1,14 @@
-# 🔔 Ready Toast
+# Ready Toast
 
 A customizable, animated, and easy-to-use toast notification component built with **Radix UI**, **React**, and **Tailwind CSS**. Supports usage with both **Vite** and **Next.js**. Includes standalone and context-based toast handling.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install ready-toast
-
+```
 
 
 ## To Get Started Simple
@@ -16,7 +16,7 @@ npm install ready-toast
 
 1.In main.jsx or _app.js
 
-
+```jsx
 import { ToastProvider } from 'ready-toast'
 
 function App() {
@@ -26,10 +26,11 @@ function App() {
     </ToastProvider>
   )
 }
-
+```
 
 2.To use Toast
 
+```jsx
 import { useToast } from 'ready-toast'
 
 function LoginButton() {
@@ -50,7 +51,7 @@ function LoginButton() {
     </button>
   )
 }
-
+```
 
 
 
@@ -59,11 +60,11 @@ Also, ensure react, react-dom, tailwindcss, and @radix-ui/react-toast are instal
 
 Also, to add additional className to Toast , you requrie tailwindcss.
 
-🚀 Features
+Features
 Built on Radix UI
 
 
-## 🔧 Tailwind CSS Configuration
+## Tailwind CSS Configuration
 
 Ready Toast requires Tailwind CSS to be installed in the user's project. Please make sure Tailwind is set up in your project before using the `ready-toast` component.
 
@@ -143,6 +144,8 @@ Works in both Vite and Next.js apps
 jsx
 Copy
 Edit
+
+```jsx
 import { Toast } from 'ready-toast'
 import React, { useState } from 'react'
 
@@ -171,11 +174,15 @@ function Example() {
     </>
   )
 }
-🌍 App-Wide Usage with Context API
+```
+
+**App-Wide Usage with Context API**
 1. Wrap your app with ToastProvider
 jsx
 Copy
 Edit
+
+```jsx
 // main.jsx or _app.js
 import { ToastProvider } from 'ready-toast'
 
@@ -186,10 +193,14 @@ function App() {
     </ToastProvider>
   )
 }
+```
+
 2. Use useToast() Hook Anywhere
 jsx
 Copy
 Edit
+
+```jsx
 import { useToast } from 'ready-toast'
 
 function LoginButton() {
@@ -210,19 +221,24 @@ function LoginButton() {
     </button>
   )
 }
-💅 Props for <Toast />
-Prop	Type	Default	Description
-open	boolean	false	Controls toast visibility
-onOpenChange	function	—	Handler to control open state
-title	string	—	Toast title
-description	string	—	Toast description
-variant	string	"default"	"default", "dark", "destructive"
-position	string	"bottom-right"	Positions like "top", "bottom-left", etc.
-duration	number	3000	Auto-hide delay in milliseconds
-className	string	—	Add custom Tailwind styles
+```
 
-🧩 Dependencies
-This package relies on:
+**Props for `<Toast />`**
+
+| Prop           | Type     | Default          | Description                                   |
+| -------------- | -------- | ---------------- | --------------------------------------------- |
+| `open`         | boolean  | `false`          | Controls toast visibility                     |
+| `onOpenChange` | function | —                | Handler to control open state                 |
+| `title`        | string   | —                | Toast title                                   |
+| `description`  | string   | —                | Toast description                             |
+| `variant`      | string   | `"default"`      | `"default"`, `"dark"`, `"destructive"`        |
+| `position`     | string   | `"bottom-right"` | Positions like `"top"`, `"bottom-left"`, etc. |
+| `duration`     | number   | `3000`           | Auto-hide delay in milliseconds               |
+| `className`    | string   | —                | Add custom Tailwind styles                    |
+
+
+**Dependencies
+This package relies on:**
 
 json
 Copy
@@ -238,12 +254,7 @@ Make sure these are available in your host project.
 📄 License
 MIT – Use freely in personal or commercial projects.
 
-yaml
-Copy
-Edit
-
 ---
-
 
 # ready-toast
 Ready Simple Toast for ReactJS and NextJS using Radix UI and TailwindCSS

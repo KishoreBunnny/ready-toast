@@ -1,6 +1,6 @@
 {
   "name": "ready-toast",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Ready Simple Toast for ReactJS and NextJS using Radix UI and TailwindCSS",
   "main": "dist/index.js",
   "type": "module",
