@@ -176,7 +176,11 @@ function Example() {
 }
 ```
 
+<<<<<<< HEAD
 **App-Wide Usage with Context API**
+=======
+🌍 App-Wide Usage with Context API
+>>>>>>> a72cb989b635f5529ee982bf4ea0adb7f7031152
 1. Wrap your app with ToastProvider
 jsx
 Copy
@@ -222,7 +226,6 @@ function LoginButton() {
   )
 }
 ```
-
 **Props for `<Toast />`**
 
 | Prop           | Type     | Default          | Description                                   |
